@@ -1,0 +1,61 @@
+# MapReduce_Assignment
+This repository is for MapReduce Programs Only.. 
+1. MV is the Matrix Vector Multiplication
+
+input:
+A = 1 2 3     v = 10
+    4 5 6         11
+    7 8 9         12
+
+
+formated Input:
+A,0,0,1,B,0,10,1,11,2,12
+A,0,1,2,B,0,10,1,11,2,12
+A,0,2,3,B,0,10,1,11,2,12
+A,1,0,4,B,0,10,1,11,2,12
+A,1,1,5,B,0,10,1,11,2,12
+A,1,2,6,B,0,10,1,11,2,12
+A,2,0,7,B,0,10,1,11,2,12
+A,2,1,8,B,0,10,1,11,2,12
+A,2,2,9,B,0,10,1,11,2,12
+
+output
+0	68    
+1	167
+2	266
+
+2. MM is the Matrix Matrix Multiplication
+
+input:
+A=2 3   B=4 3
+  4 5     8 7
+
+Formated input:  
+A,0,0,2
+A,0,1,3
+A,1,0,4
+A,1,1,5
+B,0,0,4
+B,0,1,3
+B,1,0,8
+B,1,1,7
+
+output:
+0,0	32
+0,1	27
+1,0	56
+1,1	47
+
+3. SELECT is Selection operation by MapReduce
+
+input:
+<Table_1>
+1,A,M,T,Q
+2,B,P,I,Z
+3,X,N,T,P
+
+Select * FROM Table_1 WHERE col_3="T";
+
+output:
+1	A,M,T,Q
+3	X,N,T,P
