@@ -22,7 +22,7 @@ public class Combination {
 	
 	public static List<String> combination(Object[]  elements, int K){
 		List<String> comList = new ArrayList<String>();
-		comList = null;
+//		comList = null;
 		// get the length of the array
 		// e.g. for {'A','B','C','D'} => N = 4 
 		int N = elements.length;
@@ -87,7 +87,7 @@ public class Combination {
 		int npr=nf/nrf;
 		int ncr=npr/rf; 
 		
-		System.out.println("C("+n+","+r+") = "+ ncr);
+//		System.out.println("C("+n+","+r+") = "+ ncr);
 
 		return ncr;
 	}
